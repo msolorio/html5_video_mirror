@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display Webcam Stream</title>
+<script src="./index.js" defer></script>
+<style>
+    body {
+        background: #444;
+    }
+
+    .container {
+        border: 7px #333 solid;
+        resize: horizontal;
+        overflow: hidden;
+        width: 500px;
+    }
+
+    .video {
+        margin-bottom: -4px;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(-1);
+        filter: contrast(.6) brightness(1.2);
+    }
+</style>
+</head>
+ 
+<body>
+<div class="container">
+	<video
+        autoplay="true"
+        class="video"
+        id="videoElement"
+    ></video>
+</div>
+<script>
+
+</script>
+</body>
+</html>
